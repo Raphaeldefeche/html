@@ -1,0 +1,18 @@
+.mask-container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url(images/wallpaper\ abyss\ watchers.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+
+    mask-image: url(images/ImageToStl.com_merged-document\ \(5\)_prev_ui.png);
+    mask-size: cover;
+    mask-position: 0% 0%;
+
+    transition: 500ms steps(37);
+}
+.mask-container:hover::before {
+    mask-position: 100% 0%;
+}
